@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone-Actuality</title>
+    <!-- Css Link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Bootstrap Css Link -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+
+
+</head>
+
+<body>
+
+
+
+    <!-- Search Bar -->
+    <h2 class="text-center mb-4 mt-5">Search Your Phone</h2>
+    <div class="input-group mt-5 mx-auto w-25 mb-5">
+
+        <input id="input" type="text" class="form-control" placeholder="Please Search Here"
+            aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button id="search" onclick="searchPhone()" class="btn btn-outline-secondary" type="button"
+            id="button-addon2">Search</button>
+    </div>
+
+    <!-- Single Phone Detail -->
+    <div class="container">
+
+
+        <div id="phoneDetail" class="row row-cols-1 row-cols-md-3 g-4 mx-auto w-75 rounded-3 mb-5">
+
+
+        </div>
+
+
+
+        <!-- Show Search Reasult -->
+
+        <div class="container">
+
+            <div id="phone" class="row row-cols-1 row-cols-md-3 g-4 mx-auto w-75 rounded-3">
+
+            </div>
+        </div>
+
+
+
+        <!-- Bootstrap Js Link -->
+        <script src="/js/bootstrap.bundle.min.js"></script>
+        <!-- Js Link -->
+        <script src="/js/api.js"></script>
+</body>
+
+</html>
