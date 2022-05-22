@@ -1,9 +1,5 @@
 
 
-
-
-
-
 const searchPhone = () => {
     const input = document.getElementById('input');
     const searchText = input.value;
@@ -65,18 +61,27 @@ const displayPhoneDetails = data => {
      <img src="${data.image}" class="card-img-top" alt="...">
      <div class="card-body">
          <h5 class=""><i style="color: tomato">Name : </i> ${data.name}</h5>
-         <h5 class=""><i style="color: tomato">Main Features : </i> ${data.mainFeatures.storage}</h5>
+         <h5 class=""><i style="color: tomato">Release Date : </i> ${data.releaseDate}</h5>
+         <h5 class="text-center"><i style="color: blue">Main-Features</i> </h5>
          <h5 class=""><i style="color: tomato">Chip set : </i> ${data.mainFeatures.chipSet}</h5>
          <h5 class=""><i style="color: tomato">Display Size : </i> ${data.mainFeatures.displaySize}</h5>
          <h5 class=""><i style="color: tomato">Memory : </i> ${data.mainFeatures.memory}</h5>
          <h5 class=""><i style="color: tomato">Sensors : </i> ${data.mainFeatures.sensors}</h5>
          <h5 class=""><i style="color: tomato">Storage : </i> ${data.mainFeatures.storage}</h5>
+         <h5 class="text-center"><i style="color: blue">Others</i> </h5>
+         <h5 class=""><i style="color: tomato">Bluetooth : </i> ${data.others.Bluetooth}</h5>
+         <h5 class=""><i style="color: tomato">GPS : </i> ${data.others.GPS}</h5>
+         <h5 class=""><i style="color: tomato">NFC : </i> ${data.others.NFC}</h5>
+         <h5 class=""><i style="color: tomato">Radio : </i> ${data.others.Radio}</h5>
+         <h5 class=""><i style="color: tomato">USB : </i> ${data.others.USB}</h5>
+         <h5 class=""><i style="color: tomato">WLAN : </i> ${data.others.WLAN}</h5>
         
      </div>
      </div>
      `
     phoneDetail.appendChild(div);
 }
+
 
 
 
