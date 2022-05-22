@@ -10,35 +10,33 @@
     <link rel="stylesheet" href="/css/style.css">
     <!-- Bootstrap Css Link -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-
-
 </head>
 
 <body>
+    <div class=" " style="background-color:#f08080cb ">
+        <!-- Search Bar -->
+        <h2 id="fo" class="text-center mb-4 mt- " style="color: Blue">Search Your Phone</h2>
+        <div class="input-group  mt-5 mx-auto w-25 mb-5 row row-cols-1 row-cols-md-3 ">
+
+            <input id="input" type="text" class="form-control fw-bold " placeholder="Please Search Here"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button style="background-color: #1e8fffe0" id="search" onclick="searchPhone()" class="btn btn-success"
+                type="button" id="button-addon2">Search</button>
+        </div>
 
 
-
-    <!-- Search Bar -->
-    <h2 class="text-center mb-4 mt-5">Search Your Phone</h2>
-    <div class="input-group mt-5 mx-auto w-25 mb-5">
-
-        <input id="input" type="text" class="form-control" placeholder="Please Search Here"
-            aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button id="search" onclick="searchPhone()" class="btn btn-outline-secondary" type="button"
-            id="button-addon2">Search</button>
+        <!-- Show All Phone Button -->
+        <div class="container mx-auto text-center">
+            <button id="otherPhone" class="btn btn-danger">Show All</button>
+        </div> <br>
+        <hr>
     </div>
 
     <!-- Single Phone Detail -->
     <div class="container">
 
-
         <div id="phoneDetail" class="row row-cols-1 row-cols-md-3 g-4 mx-auto w-75 rounded-3 mb-5">
-
-
         </div>
-
-
 
         <!-- Show Search Reasult -->
 
@@ -48,8 +46,6 @@
 
             </div>
         </div>
-
-
 
         <!-- Bootstrap Js Link -->
         <script src="/js/bootstrap.bundle.min.js"></script>
